@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Smart City</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src= "C:\Users\Admin\Desktop\smart-city\images\logo.png" width="50" height="50" alt="Smart City Logo">
+                Smart City
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="price-prediction.html">Price Prediction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chatbot.html">Chatbot</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="chatbot d-flex align-items-center" id="chatbot">
+        <div class="container">
+            <h1 class="display-4 text-center animate__animated animate__fadeInDown">Chat with Our Bot</h1>
+            <p class="lead animate__animated animate__fadeInUp">Get answers to your questions about our Smart City initiatives.</p>
+            <div class="chat-container animate__animated animate__fadeIn">
+                <div id="chat-box" class="chat-box"></div>
+                <form id="chat-form">
+                    <input type="text" id="user-input" placeholder="Type your message here..." required>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Smart City. All Rights Reserved.</p>
+    </footer>
+
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+        document.getElementById('chat-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userInput = document.getElementById('user-input').value;
+            const chatBox = document.getElementById('chat-box');
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('user-message');
+            userMessage.textContent = userInput;
+            chatBox.appendChild(userMessage);
+            document.getElementById('user-input').value = '';
+
+            // Simulated bot response
+            const botResponse = document.createElement('div');
+            botResponse.classList.add('bot-response');
+            botResponse.textContent = 'This is a simulated response from the chatbot.';
+            chatBox.appendChild(botResponse);
+        });
+    </script>
+</body>
+</html>

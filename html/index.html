@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            padding-top: 0; /* Remove default padding from the top */
+        }
+        .navbar {
+            background-color: #343a40; /* Dark background color */
+        }
+        .navbar-brand {
+            color: #fff; /* White text color */
+            font-weight: bold; /* Bold font weight */
+        }
+        .navbar-nav {
+            display: flex; /* Use flexbox for horizontal layout */
+            justify-content: space-between; /* Evenly distribute items */
+            width: 100%; /* Full width */
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px; /* Space between navigation items */
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important; /* White text color */
+            padding: 10px 15px; /* Padding for each link */
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #555; /* Dark background on hover */
+        }
+        .navbar-toggler-icon {
+            color: #fff; /* White color for the toggle icon */
+        }
+        .navbar-collapse {
+            justify-content: flex-end; /* Align items to the right */
+        }
+    </style>
+</head>
+<body>
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="C:/Users/Admin/Desktop/smart-city/images/logo.png" width="50" height="50" alt="Smart City Logo">
+                Smart City
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="price-prediction.html">Price Prediction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chatbot.html">Chatbot</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home d-flex align-items-center" id="home" style="background-color: #5f9ea0;">
+        <div class="container text-center text-white">
+            <h1 class="display-3 animate__animated animate__fadeInDown">Welcome to Smart City</h1>
+            <p class="lead animate__animated animate__fadeInUp">Innovative solutions for a smarter urban life.</p>
+            <a href="#features" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Explore Features</a>
+        </div>
+    </section>
+
+    <section class="features py-5" id="features" style="background-color: #f4f4f9;">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeIn">Our Features</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 animate__animated animate__zoomIn">
+                    <div class="card mb-4">
+                        <img src="C:/Users/Admin/Desktop/smart-city/images/feature1.jpg" class="card-img-top" alt="Feature 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Traffic Management</h5>
+                            <p class="card-text">Efficient and intelligent traffic control systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__zoomIn">
+                    <div class="card mb-4">
+                        <img src="C:/Users/Admin/Desktop/smart-city/images/feature2.jpg" class="card-img-top" alt="Feature 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Eco-Friendly Energy Solutions</h5>
+                            <p class="card-text">Harnessing renewable energy for a sustainable future.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate__animated animate__zoomIn">
+                    <div class="card mb-4">
+                        <img src="C:/Users/Admin/Desktop/smart-city/images/feature3.jpg" width = 300px; height = 300px;  class="card-img-top" alt="Feature 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Public Transportation</h5>
+                            <p class="card-text">Modern and efficient public transport options.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about py-5" id="about" style="background-color: #e9ecef;">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeIn">About Us</h2>
+            <p class="lead text-center animate__animated animate__fadeIn">We are dedicated to transforming urban living through cutting-edge technology and innovative solutions.</p>
+            <div class="row mt-4">
+                <div class="col-md-6 animate__animated animate__slideInLeft">
+                    <img src="C:/Users/Admin/Desktop/smart-city/images/about.jpg" class="img-fluid" alt="About Us">
+                </div>
+                <div class="col-md-6 animate__animated animate__slideInRight">
+                    <p>Smart City is at the forefront of urban innovation. Our mission is to enhance the quality of life for residents and visitors through the integration of advanced technology into everyday urban infrastructure. From smart traffic management systems to eco-friendly energy solutions, we strive to create a sustainable and efficient urban environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-5" id="contact" style="background-color: #f4f4f9;">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeIn">Contact Us</h2>
+            <p class="lead text-center animate__animated animate__fadeIn">Have any questions? We'd love to hear from you.</p>
+            <div class="row mt-4">
+                <div class="col-md-6 offset-md-3 animate__animated animate__fadeInUp">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Smart City. All Rights Reserved.</p>
+    </footer>
+
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
